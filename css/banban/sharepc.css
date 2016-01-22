@@ -1,0 +1,20 @@
+﻿*{margin: 0px;padding: 0px;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);	}
+body{background-color: #f2f2f2;font-family:华文细黑, sans-serif;font-size: 14px}
+ul{list-style-type: none}
+img{border: 0;vertical-align:top}
+a{text-decoration: none;outline: none}
+.main {width:1247px;margin:0 auto}
+    .main a {
+    display:block;background:url(about:blank);
+    }
+
+.data {position:relative;}
+    .data .className {position:absolute;left:225px;top:78px}
+        .data .className .text {font-size:26px}
+        .data .className .value {color:#fff;font-size:20px;font-weight:700;display:block;margin-top:17px}
+    .data .currentMoney {position: absolute;left: 500px;top: 69px;font-size: 38px}
+        .data .currentMoney .value {display:block; color:#fff;font-size: 140px}
+    .data .historyMoney {position:absolute;left:519px;top:330px;font-size:30px}
+        .data .histroyMoney .text {color:#59331c}
+        .data .historyMoney .value {color:#363847;display:block;font-size:52px}
+

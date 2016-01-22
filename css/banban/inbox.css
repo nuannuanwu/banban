@@ -1,0 +1,783 @@
+@charset "UTF-8";
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.orange {
+    color: #f59201;
+}
+
+.class-reward .list:before, .class-reward .list:after, .gift .list:before, .gift .list:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.class-reward .list:after, .gift .list:after {
+    clear: both;
+}
+
+.green {
+    color: #009900;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.tabBox{  }
+.tabBox span{ 
+    display: inline-block; 
+    border: 1px solid #f1f1f1;
+}
+.tabBox a{
+    display: inline-block; 
+    padding:8px 15px;
+    color: #666; 
+}
+.tabBox a.on{ 
+    background: #f59201; 
+    color: #FFFFFF;
+}
+.inbox {
+    padding-top: 10px;
+}
+
+.inbox .table {
+    border-top: none;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.inbox .table tr th {
+    color: #666;
+}
+
+.inbox .table tr th.first {
+    width: 10%;
+}
+
+.inbox .table tr td.first {
+    text-align: center;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.inbox .table tr td.first i {
+    background: url(/image/banban/type-icon.png) no-repeat;
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.inbox .table tr td.first .icon1 {
+    background-position: -5px -6px;
+    width: 24px;
+    height: 23px;
+}
+
+.inbox .table tr td.first .icon2 {
+    background-position: -7px -40px;
+    width: 21px;
+    height: 23px;
+}
+
+.inbox .table tr td.first .icon3 {
+    background-position: -6px -72px;
+    width: 21px;
+    height: 25px;
+}
+
+.inbox .table tr td.first .icon4 {
+    background-position: -5px -104px;
+    width: 25px;
+    height: 23px
+}
+
+.inbox .table tr td.first .icon5 {
+    background-position: -5px -135px;
+    width: 26px;
+    height: 26px;
+}
+
+.inbox .table tr td.first .icon6 {
+    background-position: -3px -167px;
+    width: 28px;
+    height: 28px;
+}
+.inbox .table tr td.first .icon7 {
+    background-position: -3px -200px;
+    width: 36px;
+    height: 36px;
+}
+
+.inbox .sub-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.inbox .sub-table tr.tableHead th {
+    padding: 0px!important;
+    font-weight: 100;
+}
+.inbox .sub-table tr td {
+    /*color: #999;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.inbox .sub-table tr.noRead{
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+}
+.inbox .sub-table tr .sub-first {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.inbox .sub-table tr .noRead {
+    color: #000000;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.inbox .sub-table tr .oColor {
+    color: #993300;
+}
+
+.inbox .summary {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inbox .table .msg-tr:hover {
+    background: #f5f4eb;
+}
+
+.inbox .summary a {
+    color: #999;
+}
+
+.inbox .summary a.noRead {
+    color: #ADADAD;
+} 
+/***************** 详情 *********************/
+.navMod {
+    margin-top: 5px;
+}
+
+.navMod .return {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.navMod .bds_more {
+    margin-right: 15px;
+}
+
+.details-header {
+    margin: 30px 0;
+    padding: 20px 15px;
+    background: #F5F4EB;
+    overflow: hidden;
+}
+
+.details-header .icon-left {
+    width: 80px;
+    float: left;
+}
+
+.details-header .icon {
+    background: url(/image/banban/big-icon.png) no-repeat;
+}
+
+.details-header .icon1 {
+    background-position: -4px -2px;
+    width: 42px;
+    height: 41px;
+}
+
+.details-header .icon2 {
+    background-position: -3px -57px;
+    width: 44px;
+    height: 50px;
+}
+
+.details-header .icon3 {
+    background-position: -4px -120px;
+    width: 42px;
+    height: 50px;
+}
+
+.details-header .icon4 {
+    background-position: -2px -182px;
+    width: 46px;
+    height: 44px;
+}
+
+.details-header .icon5 {
+    background-position: -3px -235px;
+    width: 45px;
+    height: 45px;
+}
+
+.details-header .icon6 {
+    background-position: 0px -286px;
+    width: 50px;
+    height: 50px;
+}
+
+.details-header .msg {
+    color: #666;
+    margin-left: 80px;
+    overflow: hidden;
+}
+
+.details-header .msg li {
+    line-height: 22px;
+}
+
+.details-header .msg .name {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details-header .msg .get-name {
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.details-header .msg .get-name .left {
+    width: 56px;
+    float: left;
+}
+
+.details-header .msg .get-name .right {
+    margin-left: 60px;
+}
+
+.details .details-c {
+    font-size: 14px;
+    line-height: 22px;
+    word-break: break-all;
+}
+
+.details .detailsImgBox {
+    margin-top: 15px;
+}
+
+.details .detailsImgBox img {
+    display: inline;
+}
+
+.details .details-c .title {
+    margin-bottom: 5px;
+}
+
+.readBox {
+    overflow: hidden;
+    border-top: 1px solid #e5e4da;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.readBox .title {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.readBox .title span {
+    font-size: 14px;
+}
+
+.readBox .readListTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.readBox .readList {
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.readBox .readList li {
+    float: left;
+    font-size: 14px;
+    margin-right: 8px;
+    position: relative;
+}
+
+.readBox .readList li a {
+    color: #000;
+    font-size: 14px;
+    vertical-align: 0px;
+}
+
+/***************** 家长提示 *********************/
+.box .tip p {
+    text-align: center;
+}
+
+.box .tip .p-img img {
+    margin: 100px 0 50px;
+    display: inline-block;
+}
+
+/***************** 我的班费 *********************/
+.bg-blue {
+    background: #25b6b7 url(/image/banban/expense_head_bg.png) no-repeat right;
+}
+
+.bg-green {
+    background: #25b76a url(/image/banban/expense_head_bg.png) no-repeat right;
+}
+
+.bg-brown {
+    background: #b76325 url(/image/banban/expense_head_bg.png) no-repeat right;
+}
+
+.class-reward {
+    overflow: hidden;
+}
+
+.class-reward .list {
+    margin-top: 20px;
+}
+
+.expense-item-head {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.expense-item-head .stress {
+    color: #f59201;
+    font-size: 20px;
+}
+
+.class-reward .list .list-li {
+    float: left;
+    width: 380px;
+    /*height: 228px;*/
+    /**height: 196px;*/
+    border: 2px solid #E5E4DA;
+    border-radius: 10px; /*padding: 15px;*/
+    margin: 0 60px 20px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.class-reward .list .list-li:hover {
+    background: #F5F4EB;
+    border: 2px solid #F59201;
+}
+
+.class-reward .class-name {
+    float: left;
+    width: 160px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.class-reward .school-name {
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    line-height: 28px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: .9;
+}
+
+.class-reward .list .list-li .list-header {
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.class-reward .list .list-li .list-header span {
+    display: block;
+}
+
+.cnt-box {
+    float: left;
+    display: block;
+    width: 50%;
+}
+
+.cnt-total {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #f59201;
+    text-align: center;
+}
+
+.cnt-total-label {
+    color: #000;
+    text-align: center;
+}
+
+.cnt-ext {
+    margin-top: 20px;
+}
+
+.list-money {
+    height: 116px;
+    font-size: 15px;
+}
+
+.list-money p {
+    padding: 2px 0;
+}
+
+.list-money .right {
+    color: #999999;
+}
+
+.class-icon {
+    background: url('/image/banban/class_icon.png') no-repeat;
+}
+
+.class-icon-logo {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background-position: 0 -44px;
+}
+
+.class-reward .list .list-li .identity {
+    background: url(/image/banban/class_ioc.png) no-repeat -1px 0;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.class-reward .sub-list {
+    margin-bottom: 20px;
+}
+
+.class-reward .sub-list .list-li {
+    cursor: default;
+}
+
+.class-reward .sub-list .list-li:hover {
+    background: #fff;
+    border: 2px solid #E5E4DA;
+}
+
+.bean-rule {
+    font-size: 13px;
+    clear: both;
+}
+
+.bean-rule .tit {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.bean-rule ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bean-rule ul li {
+    line-height: 22px;
+}
+
+/***************** 转出班费 *********************/
+.payment {
+    margin: 50px 0 70px;
+}
+
+.pay-type {
+    text-align: center;
+}
+
+.pay-type a {
+    display: inline-block;
+    border: 2px solid #E5E4DA;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 80px;
+}
+
+.pay-type a:hover {
+    border: 2px solid #F59201;
+}
+
+.pay-type .last {
+    margin-right: 0;
+}
+
+.pay-form {
+    width: 100%;
+    *width: 1024px;
+    white-space: nowrap;
+    padding-bottom: 50px;
+}
+
+.table-head {
+    padding: 5px 0 5px 5px;
+    color: #000;
+    font-weight: 600;
+    background-color: #e5e4da;
+}
+
+.tr-bb {
+    border-bottom: 1px solid #e5e4da;
+}
+
+.stress-text {
+    font-size: 16px;
+    color: #f59201;
+    font-weight: 700;
+}
+
+.expense-rule h1, .bean-rule h1 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #585858;
+}
+
+.title-2 {
+    margin-top: 40px;
+}
+
+.intro-list li {
+    line-height: 20px;
+}
+
+.expense-rule .tips {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #f59201;
+}
+
+.expense-bd {
+    margin-top: 20px;
+}
+
+.my-expense-cards li {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    width: 343px;
+    height: 85px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.my-expense-cards li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.my-expense-cards .tag, .my-expense-cards .bag, .my-expense-cards .status {
+    position: absolute;
+    display: block;
+    background: url("/image/banban/banban-s5581a47ca4.png");
+} 
+
+.my-expense-cards .tag {
+    top: -1px;
+    left: -1px;
+    width: 9px;
+    height: 86px;
+}
+
+.my-expense-cards .tag-other {
+    background-position: 0 0;
+}
+
+.my-expense-cards .tag-normal {
+    background-position: -9px 0;
+}
+
+.my-expense-cards .tag-activity {
+    background-position: -18px 0;
+}
+
+.my-expense-cards .tag-over {
+    background-position: -27px 0;
+}
+
+.my-expense-cards .bag {
+    right: 0;
+    bottom: 0;
+    width: 47px;
+    height: 65px;
+    background-position: -36px 0;
+}
+
+.my-expense-cards .status {
+    z-index: 1;
+    right: 5px;
+    bottom: 8px;
+    width: 67px;
+    height: 50px;
+}
+
+.my-expense-cards .status-overdue {
+    background-position: -83px 0;
+}
+
+.my-expense-cards .status-used {
+    background-position: -150px 0;
+}
+
+.expense {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f2631b;
+}
+.no-card-tips {
+    padding-top: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.expense span {
+    font-size: 30px;
+}
+.card-type {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    font-size: 18px;
+    color: #4c4c4c;
+}
+.card-date {
+    position: absolute;
+    top: 45px;
+    left: 150px;
+    color: #a0a0a0;
+}
+
+a.ex-rule-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #993300;
+}
+
+a.ex-rule-link i {
+    margin-right: 10px;
+}
+
+.question-mark-icon {
+    float: left;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("/image/banban/qm_icon.png") no-repeat center;
+}
+
+.overdue {
+    color: #cccccc;
+}
+
+.my-expense-cards li.over p {
+    color: #cccccc;
+}
+/***************** 百度分享 *********************/
+.shareBox {
+    padding: 15px;
+    text-align: center;
+}
+
+.share .tit {
+    font-size: 20px;
+    color: #f59201;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.share .step {
+    overflow: hidden;
+}
+
+.share .step p {
+    font-size: 14px;
+}
+
+.share .step .p1 {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.share .step .p2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.share .step .select-type {
+    margin-top: 30px;
+}
+
+.share .step .bdsharebuttonbox {
+    margin-top: 30px;
+}
+
+.bdsharebuttonbox a {
+    width: 130px !important;
+    height: 130px !important;
+    padding: 5px !important;
+    display: inline-block;
+    border: 2px solid #D2D2D2;
+    border-radius: 10px;
+    margin-right: 40px !important;
+    background-position: center center;
+}
+
+.bdsharebuttonbox a:hover {
+    border: 2px solid #f59201;
+}
+
+.bdsharebuttonbox .sqq {
+    background-image: url(/image/banban/activity/qq.jpg);
+}
+
+.bdsharebuttonbox .qzone {
+    background-image: url(/image/banban/activity/qzone.jpg);
+}
+
+.bdsharebuttonbox .sina {
+    background-image: url(/image/banban/activity/weibo.jpg);
+}
+
+.bdsharebuttonbox a.last {
+    margin-right: 0px !important;
+}
+
+/*2015.5.20*/
+.inbox .sub-table tr .read {
+    color: #000000;
+}

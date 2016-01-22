@@ -1,0 +1,265 @@
+@charset "UTF-8";
+body,a ,p,input,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form{margin:0;padding:0;list-style:none;vertical-align:middle}body{background-color:#f9f8f8;font-family: "\5FAE\8F6F\96C5\9ED1","微软雅黑",helvetica,arial;color:#000;font-size:13px}header,section,footer,img{display:block;margin:0;padding:0}img{border:0}
+* {padding:0; outline: 0;}
+a{outline: 0; noFocusLine: expression(this.onFocus = this.blur());} a:focus{ outline: 0; }
+img {border:none;line-height:0;} 
+a img{border-width:0;vertical-align:middle;outline: none;} 
+ul,li{border:0;margin:0;padding:0;list-style:none;}
+input[type=text]:focus,input[type=password]:focus,textarea:focus{outline: none;}
+input{margin-right:3px;vertical-align:middle;}
+label{font-family:Tahoma;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;outline: 0;}
+input[type="radio"], input[type="checkbox"] {
+margin: 4px 0 0;
+margin-top: 1px \9;
+*margin-top: 0px;
+line-height: normal;
+}
+input[type="text"].inputText{ border-radius: 3px; border: 1px solid #d8d8d8; }
+input[type="radio"],input[type="checkbox"]{ vertical-align:-3px; *vertical-align:1px;} 
+label{ font-weight: 100; margin: 0 8px 0 3px; }
+input,button,textarea,select{*font-size:100%; outline: 0;} 
+textarea{resize:none;outline: none;}
+form{margin:0;padding:0;border:0}
+.clearfix{zoom:1;_height:1px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clear{clear:both;font-size:0;height:0;line-height:0;}
+.fleft{float:left}
+.fright{float:right} 
+.show{display:block}
+.hide{display:none}
+.red{color: #993300; }
+.bordBox{border: 1px solid #dddddd;}
+.main1{margin-left: 20px;}
+.main2{margin-left: 50px;}
+.main3{margin-left: 100px;}
+.tableHead{ background: #f5f4eb; }
+.table{*border-bottom:1px solid #dddddd;  }
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { padding: 8px 0px 8px 10px; vertical-align: middle; height:45px; line-height: 25px;border-bottom: 1px solid #dddddd;}.tables > caption + thead > tr:first-child > th, .tables > colgroup + thead > tr:first-child > th, .tables > thead:first-child > tr:first-child > th, .tables > caption + thead > tr:first-child > td, .tables > colgroup + thead > tr:first-child > td, .tables > thead:first-child > tr:first-child > td {border-top: 1px solid #dddddd;}
+.table>tbody:last-child > tr:last-child > td{ border-bottom:1px solid #dddddd;}
+.table>tbody:last-child > tr.remindBox:last-child > td { border-bottom: none;}
+.table > tbody > tr > th{ font-weight: 100; color: #666666; }
+.noneTopB > tbody > tr > th{border-top:none;}
+.box{ padding: 15px;}
+.colorTip{ color: #f37112;}
+.colorP{color: #993300;}
+.infoTitle{ font-size: 18px; }
+.checkbox{ color: #666666; font-weight: 100; display: inline-block; }
+.backtrackColor{ background: #FFFFFF;}
+.textFixed{ table-layout: fixed; word-break: break-all;  }
+.textFixed img{ width: 50px; height: 50px; }
+input::-ms-clear{display:none;}
+.clear{ margin-left: 15px; font-size: 16px; } 
+/*------按钮样式---------*/ 
+.btn {display: inline-block; padding: 6px 20px; margin-bottom: 0; margin-right: 15px; font-size: 14px; font-weight: normal;   text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; border-radius: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; outline: none;}
+.btn em.getBack{ display: inline-block; float: left;line-height: 20px; margin-right: 3px; width: 17px;  height: 20px; background: url('/image/banban/get_back_ico.png') center no-repeat;}
+.btn-default { color: #333333; background-color: #f3f3f3; border-color: #d7d7d7; }
+.btn-disabled{ color: #666666; background-color: #cccccc; border-color: #d7d7d7;}
+.btn-disabled:hover,.btn-disabled:focus {text-decoration: none; color: #666666;  text-decoration: none; -webkit-transition: background-position .1s linear;}
+.btn-default:hover, .btn-default:focus {color: #333333; background-color: #d7d7d7; text-decoration: none; -webkit-transition: background-position .1s linear; border-color: #cccccc; }
+.btn-orange {color: #ffffff; background-color: #f59201; border-color: #f59201; }
+.btn-orange:hover, .btn-orange:focus {color: #ffffff; opacity: 0.8; filter:alpha(opacity=80) text-decoration: none; background-position: 0 -15px;-webkit-transition: background-position .1s linear; }
+.btn-gray {color: #fff; background-color: #999; border-color: #999; }
+.btn-gray:hover, .btn-gray:focus {color: #fff; opacity: 0.8; filter:alpha(opacity=80);text-decoration: none; background-position: 0 -15px;-webkit-transition: background-position .1s linear; } 
+.btn .return{ display: inline-block; margin-right:5px; }
+ 
+/* popupBox弹出框 */
+.popupBox{ width: 395px; min-height: 150px; padding:0; margin: 50px auto; position:fixed; z-index: 99999; background-color: #fff; display: none; }
+.popupBox .header{ height: 52px; line-height: 52px; width: 100%; *width: auto; color: #ffffff; font-size: 18px; background-color: #f59201; padding: 0 20px; } 
+.popupBox .opupBoxTile{ color: #000000; text-align: center; font-size: 16px; padding-top: 20px; }
+.popupBox .close{ width: 31px; height: 31px;  font-size: 16px; display: block; position:absolute; right:10px; top: 10px; cursor: pointer; background: url('/image/banban/close_ico.png') center no-repeat; opacity: 1;}
+.close:hover{transform:rotate(180deg); opacity: 0.8;}
+.popupBox h3{ font-size: 24px;  margin: 0; padding: 5px 0;  color: #333; word-wrap : break-word; white-space:normal;}
+.popup{padding:30px 0 30px 50px;}
+.popupBox .prompt{ width: 100%; height: auto; overflow: hidden; margin: 5px 0;}
+.popupBox .prompt img{ width: 100%; height: 120px; } 
+.popupBox .centent{ font-size: 14px; color: #666666; text-indent: 2em; padding: 5px 0; word-wrap : break-word; white-space:normal;} 
+.popupBox .remindInfo{ padding: 20px;}
+.popupBox .popupBtn{ text-align: center; margin:0 0 20px 0; }
+.popupBox .remindInfo input.lg{width:220px;}
+.popupBox .remindInfo input.xlg{width:320px;}
+.popupBox .remindInfo textarea{width:100%;height: 100px;}
+.popupBox .remindInfo .Validform_checktip{margin:0;}
+
+.reminder{ width: 658px; background-color: #fff; border:1px solid #ccc; position: fixed; right:30px; bottom:30px; z-index: 100; box-shadow: 0 0 5px #ccc; -moz-box-shadow: 0 0 5px #ccc;-webkit-box-shadow: 0 0 5px #ccc;-o-box-shadow: 0 0 5px #ccc;-ms-box-shadow: 0 0 5px #ccc;}
+.reminderTit{ height:44px;line-height: 44px;font-family: "微软雅黑"; font-size: 17px; color: #fff; padding-left:45px; background:#993300 url('/image/xiaoxin/reminderIco.png') no-repeat 15px 12px;}
+.reminder em.colse{ position: absolute; right:0; top:0; width:44px; height:44px; display: block; text-indent: -999em; overflow:hidden; font-family:"微软雅黑"; font-size: 20px; color: #FFF; cursor: pointer; font-style: normal; background:url('/image/xiaoxin/reminderIco.png') no-repeat center -68px; opacity: 1;}
+.reminder em.colse:hover{opacity: 0.5;}
+.reminderCom{ font-size: 14px;font-family: "微软雅黑"; padding:20px; color: #666666;}
+.reminderCom .tellTip{ text-align: center; }
+.reminderCom span{ color: #f37112;}
+.reminderCom p.indent{ text-indent: 2.0em; } 
+.reminderCom p.last{  padding-right: 10px; text-align: center; padding-left: 50px;   }
+.reminderCom p img{ display: inline; }
+.erweimaApp{position: fixed; right: 80px; bottom: 20px; z-index: 10; } 
+
+#PreviewBox{}
+#PreviewBox .popupBox{ width:auto; display: none; background: none; }
+#PreviewBox .popupBox .header{ background: none; border: none; height: 40px; line-height: 40px; }
+#PreviewBox .popupBox .imgbox div{ text-align: center; background-color: #f5f5f5;  font-size: 18px; color: #999999; }
+#PreviewBox .popupBox .imgbox{width:600px;height: 600px;margin-top: 20px;overflow-y:auto;}
+#PreviewBox .popupBox .imgbox img{ max-height: none!important; max-width: 100%; }
+
+/*=========系统公告样式============*/ 
+.reminderCom a{ display: block; }
+.reminderCom a:hover{ opacity: 0.8; } 
+.reminder{ width: 548px; background-color: #fff; border:1px solid #ccc; position: fixed; right:20px; bottom:20px; z-index: 100; box-shadow: 0 0 5px #ccc; -moz-box-shadow: 0 0 5px #ccc;-webkit-box-shadow: 0 0 5px #ccc;-o-box-shadow: 0 0 5px #ccc;-ms-box-shadow: 0 0 5px #ccc;}
+.reminderTit{ height:44px; line-height: 44px;font-family: "微软雅黑"; font-size: 17px; color: #fff; background:#f59201 url('/image/xiaoxin/reminderIco.png') no-repeat 15px 12px; padding-left:45px;}
+.reminder em.colse{ position: absolute; right:0; top:0; width:44px; height:44px; display: block; text-indent: -999em; overflow:hidden; font-family:"微软雅黑"; font-size: 20px; color: #FFF; cursor: pointer; font-style: normal;background:url('/image/xiaoxin/reminderIco.png') no-repeat center -68px;}
+.reminder em.colse:hover{ opacity: 0.8;}
+.reminderCom{ font-size: 13px;font-family: "微软雅黑"; padding:20px;}
+.reminderCom span{ color: #f37112;}
+
+/*=========布局样式============*/ 
+.box{padding: 15px 30px;}
+.layoutBodyBox{ overflow: hidden; margin: 0; padding: 0;  background-color: #e5e4da; position: relative;}
+.headerBox{ height: 67px; border-bottom: 1px solid #E1E1E1; font-size: 18px; background-color: #f59201;}
+.headerBox .logoBox{ float: left;margin-left: 10px;}
+.headerBox .userBox{ margin-left: 280px;  height: 66px; vertical-align: middle; position: relative; border: none; z-index: 99;}
+    .userBox .name{  float: left;   font-size: 18px; color: #fff; line-height: 26px;}
+    .userBox .siteBox{font-size: 13px; float: left;  *display: inline; padding: 0; *padding: 0px 25px; text-align: center;  margin-left: 5px; *margin-left: 5px; *zoom:1;}
+    .siteBox .siteListBox{ position: relative; overflow: hidden; padding: 0 14px; line-height: 23px; *line-height:25px; border: none;}
+    .siteBox .siteListBox i.sitIco{ position: absolute; width: 14px; height: 26px; top:0; }
+    .siteBox .siteListBox i.sitIco_l{ left: 0; background: url(/image/banban/site_bg_ico_l.png) center no-repeat; }
+    .siteBox .siteListBox i.sitIco_r{ right: 0; background: url(/image/banban/site_bg_ico_r.png) center no-repeat; }
+        .siteListBox .sitLists{ background: url(/image/banban/site_bg_ico_c.png) center repeat-x;  overflow: hidden; height: 26px; padding: 0 5px; border: none;}
+        .siteListBox .sitLists em{color: #993300; font-style:normal; margin: 0 6px;}
+        .siteListBox .sitLists a{  color: #993300; line-height: 26px;} 
+.headerBox .userBox .old-site{ position:  absolute; top:20px; right:10px; }
+.headerBox .userBox .old-site ul{ font-size: 0; }
+.headerBox .userBox .old-site ul li{ display: inline-block; *display: inline; *zoom:1; font-size: 12px; margin-right: 20px; }
+.headerBox .userBox .old-site a{ display: inline-block; background: url(/image/banban/old-site.jpg) no-repeat 0 0; width: 87px; height: 26px; line-height: 26px; text-align: center; font-size: 12px; color: #993300; }
+           .userBox .giftBox{ width: 140px; position: absolute; top:3px; left: 300px; zoom: 1; }
+
+
+.subnavBox{padding: 10px 0 0 0; margin: 0; float: left; width: 220px; background-color: #e5e4da; }
+.layoutBox{ margin-left: 220px; background-color: #e5e4da; }
+.layoutBodyBox .mainBox,.layoutBox .mainBox{ background-color: #ffffff; border-left:1px solid #cccbbc; *overflow: hidden;}
+.mainBox .submenuBoxR{ position: absolute; width: 220px; right: 0px; top:20px;}
+.mainBox .cententBox {background-color: #ffffff; }
+    .cententBox .titleHeader{ background-color: #f5f4eb; height: 60px; line-height: 60px; font-size: 18px; color: #666666; padding-left: 20px;}
+    .cententBox .titleTable{ padding:0 5px;}
+    .cententBox .titleTable ul li a{ padding: 0 15px; }
+    .cententBox .titleName{ text-align: center; font-size: 18px; margin:20px 0;}
+    .cententBox .titleName span.school{ margin-right: 5px;}
+    .cententBox .titleName span.class{margin-left: 5px; color: #333333;}
+    .navMod { position: relative;}
+    .navMod a{ margin-bottom: 10px; }
+ .listTopTite{ font-size: 18px; color: #666666; padding: 15px 0; }   
+/*------tab样式---------*/
+.titleBox{ border-bottom: 1px solid #E1E1E1; height: 53px; line-height: 53px; font-size: 18px; padding-left: 4px; margin-bottom: 10px;  }
+.titleTable li{ float: left; margin-right: 20px;  }
+.titleTable li a {display: inline-block; padding: 0 15px; line-height: 50px; color: #993300; }
+.titleTable li a span{font-size: 13px;}
+.titleTable li a.focus{border-bottom: 3px solid #f59201; text-decoration: none; color: #000000;}
+.titleTable li a:hover{  border-bottom: 3px solid #f59201; text-decoration: none; color: #000000; }
+.titleTable li a.focus:hover{border-bottom: 3px solid #f59201; text-decoration: none; color: #000000;}
+
+/*------右侧框样式----------*/
+.playerBox{ position: relative; height: 0px; width: auto; }
+.playerBox a{background: #c0bea5; position: absolute; width: 16px; height: 44px; right: -17px; top:10px;border-radius: 0 6px 6px 0;  border: 1px solid #c0bea5; border-left: none;z-index: 1; line-height: 44px; text-align: center; }
+.playerBox a em{display: inline-block; height: 13px; width: 8px; *margin-top: 16px; background:url('/image/banban/on-off-navIco.png');}
+.playerBox a.playerOn em{background-position: 0 0px; }
+.playerBox a.playerOff em{background-position: 0 -13px; } 
+.playerBox a:hover{ background-color:#f59201;}
+
+/*-----formBox样式- -------*/
+.formBox{ margin-top: 0px; }
+.tableForm{width: 100%; margin-top: 0px; }
+.tableForm .title{ font-size: 18px; color: #333333; }
+.tableForm .inputTitle{ text-align: left; font-size: 13px;  color: #333333; margin-right: 5px; display: inline-block; width: 65px;  }
+.tableForm .inputBox,table .inputBox{ display: inline; margin-right: 5px; }
+.tableForm .inputBox input[type="text"],.tableForm .inputBox input[type="password"]{ height:36px; line-height:25px; margin:0; *height: 24px; *line-height:20px; outline: 0; }
+.tableForm .inputBox textarea,.tableForm .inputBox input[type="text"],.tableForm .inputBox input[type="password"]{background-color: #fff; border: 1px solid #aaa; border-radius: 3px;  outline: 0;}
+select, textarea, input[type="text"],input[type="password"]{display: inline-block;font-size: 13px;padding: 4px 5px; color: #555; vertical-align: middle; outline: 0; height:36px; line-height:25px; *height: 24px; *line-height:25px;}
+.tableForm .inputBox input[type="text"].min,.tableForm .inputBox select.min,input[type="text"].min,select.min{ width: 60px;}
+.tableForm .inputBox input[type="text"].sx,.tableForm .inputBox select.sx,input[type="text"].sx,select.sx{ width: 100px;}
+.tableForm .inputBox input[type="text"].sm,.tableForm .inputBox select.sm,input[type="text"].sm,select.sm{ width: 160px;}
+.tableForm .inputBox input[type="text"].medium,.tableForm .inputBox select.medium{width:180px}
+.tableForm .inputBox input[type="text"].mediumL,.tableForm .inputBox select.mediumL{width:240px}
+.tableForm .inputBox input[type="text"].mediumM,.tableForm .inputBox select.mediumM{width:260px}
+.tableForm .inputBox input[type="text"].mediumLx,.tableForm .inputBox select.mediumLx{width:280px}
+.tableForm .inputBox input[type="text"].lg,.tableForm .inputBox select.lg{ width: 320px;}
+.tableForm .radioBox input[type="radio"]{ vertical-align:-3px;} 
+.tableForm .radioBox label{ font-weight: 100; margin: 0 8px 0 3px; }
+.tableForm .inputBox input[type="password"].mediumL{width:240px }
+.table input[type="text"].ssx{width: 80px;}
+.tableForm > tbody > tr >td ,
+.tableForm > tbody > tr > th { border: none !important; padding: 8px 0px; vertical-align:baseline;}
+.tableForm .btnBorder { border-top: 1px solid #E1E1E1; padding: 15px 0; }
+.searchForm{margin-bottom: 15px;}
+.searchForm > tbody > tr >td.search .btn{ padding: 3px 18px 6px 18px; font-size: 14px; }
+.searchForm> tbody > tr >td{padding: 0px 8px;}
+.searchForm> tbody > tr >td:first-child{ padding-left: 0;}
+
+/*-----没有数据默认样式-----*/
+.noContent{ text-align: center; margin: 0 auto; padding-top: 40px; }
+.noContent img{ margin: 0 auto; }
+.noContent span{ width: 300px; }
+.noContent p{ font-size: 18px; color:#999999; margin-top: 10px;}
+ 
+textarea::-webkit-input-placeholder , input[type="text"]::-webkit-input-placeholder,input[type="password"]::-webkit-input-placeholder{ /* WebKit browsers */
+    color:    #999;
+}
+.formBox .box .tableForm > tbody > tr >td ,
+.formBox .box.tableForm > tbody > tr > th { padding: 11px 0;}
+ /* Mozilla Firefox 4 to 18 */
+textarea:-moz-placeholder, input[type="text"]:-moz-placeholder,input[type="password"]:-moz-placeholder { color:#999;}
+ /* Mozilla Firefox 19+ */  
+textarea::-moz-placeholder , input[type="text"]::-moz-placeholder ,input[type="password"]::-moz-placeholder { color:#999;}
+/* Internet Explorer 10+ */
+textarea:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder,input[type="password"]:-ms-input-placeholder {color:#999;} 
+
+/*
+@media screen and (min-width:0px) and ( max-width:800px){
+    .layoutBodyBox{ width: 800px; }
+    //.listTopTite img{ display: inline; width: 95%;}
+} 
+
+*/
+
+/*MENU style*/
+.menuItmeBox { background-color: #e5e4da; }
+.menuItmeBox li { }
+.menuItmeBox li.noclick { background: url('/image/banban/dot_ioc.png') 6px center no-repeat; }
+.menuItmeBox li a { display: block; height: 50px; line-height: 50px; font-size: 16px; padding-left: 20px; color: #993300; }
+.menuItmeBox li a span.noclick { padding-right: 15px; background: url('/image/banban/dot_ioc1.png') right top no-repeat; }
+.subMenu li a{height: 40px;line-height: 40px;font-size: 14px;}
+.menuItmeBox li a:hover, .menuItmeBox li a.active {background-color: #ffffff;color: #000;width: 221px;*width: 201px;position: relative;z-index: 1;}
+.menuItmeBox li a .icon {width: 31px;display: inline-block;text-align: center;margin-right: 5px;color: #D4D5D0;z-index: 999;}
+.menuItmeBox li a .icon i {display: inline-block;vertical-align: middle;}
+.menuItmeBox li a .icon1 i {background: url('/image/banban/menu-icon.png') no-repeat -5px -5px;width: 24px;height: 24px;}
+.menuItmeBox li a .icon2 i {background: url('/image/banban/menu-icon.png') no-repeat -4px -36px;width: 22px;height: 18px;}
+
+.bTop {border-top: 1px solid #f5f5f5;}
+.bBottom {border-bottom: 1px solid #cccbbc;}
+.bBttomT {border-bottom: 1px solid #e5e4da;}
+.erweima { width:220px;text-align: center; z-index: 2;}
+.erweima .gift{margin-bottom: 20px;display: inline-block;}
+.erweima .return{width: 100px;margin:0 auto;margin-bottom: 10px;vertical-align: middle;}
+
+/*****************内容CION*********************/
+.titleHeader .icon { width: 31px;height:26px; margin-right: 5px; display: inline-block;vertical-align: middle;background-image: url(/image/banban/tit-icon.png); background-repeat:no-repeat;}
+.titleHeader .icon1 {background-position: center -4px;  }
+.titleHeader .icon2 {background-position: center -30px; }
+.titleHeader .icon3 {background-position: center -300px; }
+.titleHeader .icon4 {background-position: center -59px; }
+.titleHeader .icon5 {background-position: center -120px; }
+.titleHeader .icon6 {background-position: center -148px; }
+.titleHeader .icon7 {background-position: center -178px; }
+.titleHeader .icon8 {background-position: center -210px; }
+.titleHeader .icon9 {background-position: center -239px; }
+.titleHeader .icon10 {background-position: center -268px; }
+
+/*****************qq客服样式*********************/
+.qqkf{ position: absolute; right: -5px;  top:35px; display: none;  z-index: 100; width:171px; overflow: hidden; }
+.qqkf .qq-listBox{  margin-left: 36px; width:171px; background: url(/image/banban/qq/boxBg.png) repeat-y; margin:0 auto; font-size: 0; overflow: hidden; }
+.qqkf .qq-list{ padding:5px; overflow: hidden;}
+.qqkf .qq-list li{ background:#fff; margin:0 5px; height:40px; line-height: 40px; border-bottom:1px solid #E3E3E3; }
+.qqkf .qq-list li:first-child{border-top:1px solid #E3E3E3;}
+.qqkf .qq-list li .q-person{ margin:0 10px;  }
+.qqkf .qq-list li .q-person a{ background: url(/image/banban/qq/qqIco.jpg) no-repeat 0 center; padding-left:30px; display:inline-block; overflow:hidden; color:#000; height:22px; line-height: 22px; font-size: 14px; }
+.qqkf .qq-tit{ width:171px; height:59px; background: url(/image/banban/qq/qqBoxHeader.png) no-repeat; }
+.qqkf .qq-fot{  width:171px; height:59px; background: url(/image/banban/qq/qqBoxFooter.png) no-repeat; }

@@ -1,0 +1,134 @@
+/*
+ 礼包
+*/
+/* 
+    Created on : 2015-4-3, 10:18:24
+    Author     : heting
+*/
+/***************** 我的礼包 *********************/
+.gift {
+    overflow: hidden; 
+    display: inline-block;
+    *display: inline-table;
+}
+.gift .list {
+    margin: 20px 0 50px;
+    width: 500px;
+    display: inline-block;
+    *display: inline-table;
+}
+.gift .list .list-li {
+    float: left;
+    width: 409px;
+    height: 266px;
+    background: url(/image/banban/activity/bg1.jpg) no-repeat;
+    border-radius: 10px;
+    margin: 0 30px 30px 0;
+    position: relative;
+}
+.gift .list .c {
+    padding: 15px 30px;
+    margin-top: 85px;
+    color: #fff;
+    font-size: 14px;
+}
+.gift .list .c a.yellow {
+    text-decoration: underline;
+}
+.gift .list .c a.yellow:hover {
+    color: #ffff00;
+}
+.gift .list .c .btn1{
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.gift .list .c .time {
+    margin: 15px 0;
+}
+.gift .list .c .btn1-gray {
+    cursor: default;
+    color: #fff; 
+    background-color: #999; 
+    border-color: #999; 
+}
+.gift .list .c .btn1-default {
+    color: #000;
+    background-color: #f3f3f3; 
+    border-color: #d7d7d7;
+}
+.center {
+    text-align: center;
+}
+.yellow {
+    color: #ffff00;
+}
+.gift .list .fail {
+    background: url(/image/banban/activity/bg2.jpg) no-repeat;
+}
+.gift .list .fail .c, .gift .list .fail .c .yellow {
+    color: #ccc;
+}
+.gift .list .fail .c .yellow:hover {
+    color: #ccc;
+}
+.gift .list .status {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.inviteGift{ overflow: hidden; width: 500px; display: inline-block;*display: inline;}
+.inviteGift .listGift{ margin: 20px 0 50px; width: 500px; display: inline-block;*display: inline;}
+.inviteGift .listGift .listGiftLi { float: left; width: 416px; height: 309px;  border-radius: 10px;margin: 0 30px 30px 0; position: relative; }
+.inviteGift .listGift .listGiftLiBg{background: url(/image/banban/activity/inviteBg.png) no-repeat;}
+.inviteGift .listGift .listGiftLiBg1{background: url(/image/banban/activity/inviteBg1.png) no-repeat;}
+.inviteGift .listGift .infoBox { padding: 5px 30px; margin-top: 80px; color: #000000; font-size: 13px; }
+.inviteGift .listGift .infoBox a.linkInfo{ color: #f59201; }
+.inviteGift .listGift .infoBox a.linkInfo:hover{ text-decoration: underline;  }
+.inviteGift .listGift .listGiftLiBg1 .infoBox{ color: #CCCCCC;} 
+.listGift .infoBox p{ margin-bottom: 10px; line-height: 23px; }
+.listGift .infoBox p.last{ margin-bottom: 5px;}
+.listGift .infoBox p.center{text-align: center; margin-bottom:0; }
+.listGift .infoBox p.time span{ margin-right: 50px; cursor: default; }
+.listGift .infoBox p img{ display: inline;}
+.listGift .infoBox p.type{ text-align: right; }
+
+
+
+.gifteBox{ overflow: hidden; padding-bottom: 100px; }
+.gifteBox .gifteList{ }
+.gifteList li{ margin: 15px 30px 15px 0; width: 296px; height: 186px; position: relative; float: left; }
+.gifteList li.createClass{ background: url('/image/banban/invite/gift_c_c.png') no-repeat; }
+.gifteList li.createHide{ background: url('/image/banban/invite/gift_c_c_hide.png') no-repeat; }
+.gifteList li.inviteG{background: url('/image/banban/invite/gift_i.png') no-repeat;}
+.gifteList li.inviteHide{background: url('/image/banban/invite/gift_i_hide.png') no-repeat;}
+.gifteList li a.link{ display: block; position: absolute; width: 79px; height: 190px; top:-4px; left: 0px;}
+.gifteList li a.linkC{ background: url('/image/banban/invite/gift_c_cl.png') no-repeat; }
+.gifteList li a.linkChide{ background: url('/image/banban/invite/gift_c_link_hiede.png') no-repeat; top:-1px; }
+.gifteList li a.linkC:hover{background: url('/image/banban/invite/gift_c_cl_hover.png') no-repeat;} 
+.gifteList li a.linkI{ background: url('/image/banban/invite/gift_i_link.png') no-repeat; }
+.gifteList li a.linkIhide{ background: url('/image/banban/invite/gift_i_link_hiede.png') no-repeat;top:-1px; }
+.gifteList li a.linkI:hover{background: url('/image/banban/invite/gift_i_link_hover.png') no-repeat;}
+.gifteList li .type{ position: absolute;  width: 116px; right: 5px; bottom: 10px; }
+.gifteList li .btnBox{ width: 100px; height: 45px; }
+.gifteList li .gifteInfo { position: absolute; width: 135px; height: 85px; bottom: 8px; left: 70px; line-height: 23px; font-size: 13px; }
+.gifteList li .gifteInfoHide{ height: 25px; color: #cccccc;}
+.gifteList li .giftInvite{ height: 65px;}
+.gifteList li .gifteInfo .cH3{ color: #ffff00;}
+.gifteList li .gifteInfo .cP{ color: #fff; }
+.gifteList li .gifteInfo .cP span{ color: #ffff00; }
+.tipPupBtn{ cursor: pointer; }
+.tipPupBox{z-index: 1; display: none; padding: 20px; position: absolute; width: 190px; height: 100px; right: -25px; bottom: -45px; border: 1px solid #cdcdcd; background: #ffffff; }
+.tipPupBox h3{ font-size: 14px; margin-bottom: 10px; }
+.tipPupBox p{ }
+.tipPupBox p span.red{ color: #ff0000; }
+.linkbtn{ color: #993300; vertical-align: 0; text-decoration: underline;  }
+
+
+
+

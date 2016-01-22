@@ -1,0 +1,127 @@
+/* ------------------------------------page------------------------------------ */
+#pager{ text-align: right; }
+#pager ul.yiiPager
+{   
+    border:0;
+    margin:0;
+    padding:0;
+    line-height:100%;
+    display:inline;
+}
+
+#pager ul.yiiPager li
+{
+    display:inline;
+    margin: 0;
+    padding: 0; 
+}
+
+#pager ul.yiiPager a:link,
+#pager ul.yiiPager a:visited
+{
+    border:solid 1px #E1E1E1;
+    font-weight:bold;
+    display:inline;
+    color:#333333;
+    padding:5px 12px;
+    line-height: 20px;
+    text-decoration:none;
+}
+
+#pager ul.yiiPager .page a
+{
+    font-weight:normal; 
+}
+
+#pager ul.yiiPager a:hover
+{
+    border:solid 1px #f59201;
+}
+
+#pager ul.yiiPager .selected a
+{
+    background:#f59201;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+#pager ul.yiiPager .hidden a
+{
+    border:solid 1px #f59201;
+    color:#888888;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+#pager ul.yiiPager .first,
+#pager ul.yiiPager .last
+{
+    display: inline;
+}
+
+/* ------------------------------------page1------------------------------------ */
+#page1 {
+    font-size: 0;
+    text-align: right;
+}
+
+#page1  ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+
+#page1 ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    background: #F5F4EB;
+    color: #8c8c8c !important;
+    border: 1px solid #ddd !important;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 0 !important;
+}
+
+#page1  ul .selected a, #page1 ul li a:hover {
+    background: #F59201;
+    color: #fff !important;
+}
+
+#page1  .hidden {
+    display: none;
+}
+
+.pages {
+    font-size: 0;
+    text-align: right;
+}
+
+.pages a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    background: #F5F4EB;
+    color: #8c8c8c;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.pages .active, .pages a:hover {
+    background: #F59201;
+    color: #fff;
+}
+
+.pages .hidden {
+    display: none;
+}
+  

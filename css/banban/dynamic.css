@@ -1,0 +1,179 @@
+/*
+班班动态
+*/
+/* 
+    Created on : 2015-3-24, 16:41:34
+    Author     : heting
+*/
+/*-------------- 介绍、活动页--------------------*/
+.layout_div{width: 1000px; margin: 0 auto; overflow: hidden; clear: both; background:#fff; text-align:center; } 
+.btn {display: inline-block; padding: 6px 20px; margin-bottom: 0; margin-right: 15px; font-size: 14px; font-weight: normal;   text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; border-radius: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; outline: none;}
+.btn em.getBack{ display: inline-block; float: left;line-height: 20px; margin-right: 3px; width: 17px;  height: 20px; background: url('/image/banban/get_back_ico.png') center no-repeat;}
+.btn-default { color: #333333; background-color: #f3f3f3; border-color: #d7d7d7; }
+.btn-default:hover, .btn-default:focus {color: #333333; background-color: #d7d7d7; text-decoration: none; -webkit-transition: background-position .1s linear; border-color: #cccccc; }
+.btn-orange {color: #ffffff; background-color: #f59201; border-color: #f59201; }
+.btn-orange:hover, .btn-orange:focus {color: #ffffff; opacity: 0.8; filter:alpha(opacity=80); text-decoration: none; background-position: 0 -15px;-webkit-transition: background-position .1s linear; }
+.about .sidebar{
+    width:238px;
+    border:1px solid #E5E5E5;
+    float:left;
+}
+.about .content-box{
+    margin-left:280px;
+    padding-bottom:50px;
+}
+.about .content-box ul.list{ }
+.about .content-box ul.list li{
+    padding-bottom: 25px;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 30px;
+}
+.about .content-box  ul.list li h2{
+    margin-top: 10px;
+    font-weight:normal;
+    font-size:18px;
+    color: #993300;
+}
+.about .content-box  ul.list li p.datetime{
+    color: #999999;
+    margin-top: 8px; 
+    font-size:13px;
+}
+ .about .content-box  ul.list li .lookColor{
+    color: #993300;
+    font-size:13px;
+    line-height:26px;
+    padding: 0; margin: 0;
+}
+.about .sidebar ul li a{
+    display:block;
+    padding:10px 0 10px 20px;
+    background:#F5F5F5;
+    font-size:16px;
+    border-left:8px solid #F5F5F5;
+    color:#993300;
+}
+.about .sidebar ul li a:hover{
+    text-decoration: none;
+
+}
+.about .sidebar ul li a.active{
+    background:#E5E4DA;
+    border-left:8px solid #F68D00;
+    color:#000;
+}
+.center{
+    text-align:center;
+}
+.layout_div{
+    overflow:visible;
+}
+
+.container{
+    background:#FFF;
+}
+.bgColor1{
+    background:#FaFaFa;
+}
+.container{
+    width:1000px;
+    margin:20px auto;
+    color:#000;
+    overflow:hidden;
+}
+.container h1{
+    text-align:center;
+    font-weight:normal;
+    font-size:24px;
+    margin:30px 10px;
+
+}
+.container p{  
+    font-size:13px;
+    line-height:26px;
+}
+.container p.imgbox{
+    margin-top: 15px;
+}
+
+.scroll{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    cursor: pointer;
+}
+/*---------------详情-----------------*/
+.abouts .content-box{ 
+    margin: 0;
+    padding-bottom:50px;
+    min-height:620px;
+} 
+.abouts .content-box h1{
+    margin-bottom: 5px;
+     font-size: 18px;
+     color: #000;
+} 
+.abouts .content-box p.datetime{
+    text-align: center;
+    color: #999999;
+    margin-top: 5px;
+    font-size:13px;
+}
+
+/* ------------------------------------page------------------------------------ */
+.page {
+    font-size: 0;
+    text-align: center;
+}
+.page ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+.page ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    background: #F5F4EB;
+    color: #8c8c8c !important;
+    border: 1px solid #ddd !important;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 0 !important;
+    text-decoration: none;
+}
+.page ul .selected a, .page ul li a:hover {
+    background: #F59201;
+    color: #fff !important;
+}
+.page .hidden {
+    display: none;
+}
+.pages {
+    font-size: 0;
+    text-align: right;
+}
+.pages a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    background: #F5F4EB;
+    color: #8c8c8c;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+.pages .active, .pages a:hover {
+    background: #F59201;
+    color: #fff;
+}
+.pages .hidden {
+    display: none;
+}

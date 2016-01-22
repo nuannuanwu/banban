@@ -1,0 +1,35 @@
+/*
+ 个人设置 页面样式
+*/
+/* 
+    Created on : 2015-1-22, 15:41:19
+    Author     : Ht
+*/
+
+/*-----account页面样式-----*/
+.account{}
+.account .tableForm .userPic{ width: 60px; height: 60px; }
+.account .tableForm .userBtnBox{ height: 60px; margin-left: 70px; }
+.account .tableForm .userBtnBox p{ color: #999999; margin-bottom: 10px; }
+.account a.messageLink{ text-decoration: underline; color: #999999;}
+.account a.messageLink:hover{ color: #e86367; }
+
+/*------------- 邀请----------*/
+.inviteBox{ overflow: hidden; }
+.inviteBox p.title{ font-size: 16px; color: #333333; }
+.inviteBox p.title span{ color: #f59201; }
+.inviteBox ul{ overflow: hidden; margin: 15px 0 40px 0; }
+.inviteBox ul li{ float: left; padding: 10px; border: 1px solid #c7c6b0; width: 230px; height:100px; border-radius: 6px; background-color: #f5f4eb; margin-right: 15px; margin-bottom: 15px; }
+.inviteBox ul li .pic{ float: left; }
+.inviteBox ul li .rInfo{ margin-left: 80px; margin-top: 6px; }
+.rInfo .title{ font-size: 18px; color: #000000; margin-bottom: 10px; }
+.rInfo p{ color: #878681; font-size: 12px;}
+.rInfo p span.red{color:#ff0000;}
+.i-box{ position: relative; width: 100%; }
+.i-box img{display:block; max-width: 100%; height: auto; } 
+.i-box img.pic{display: inline-block; border-radius: 100%; -moz-border-radius: 100%; -webkit-border-radius: 100%; }
+.i-box img.v-ico{display: inline-block; position: absolute; right: 0; bottom: 0; width: 24px; vertical-align: bottom;}
+a.s-ioc{display: inline-block; width: 25px; height: 25px; margin-left: 20px; background: url('/image/banban/wite_ioc.png') no-repeat;}
+a.ioc-1{ background-position: center 0; }
+a.ioc-2{ background-position: center -25px; }
+

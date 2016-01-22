@@ -1,0 +1,107 @@
+/*
+ 收件箱，发件箱评论 样式
+*/
+/* 
+    Created on : 2015-3-18, 11:21:13
+    Author     : 何挺
+*/
+.commentsBox{}
+.commentsBox .textareaBox{position: relative; width: auto; padding: 0; }
+.commentsBox .textareaBox textArea{ border: 1px solid #aaa; border-radius: 3px; color: #666666; width: 100%; }
+.commentsBox .textareaBox  .inputRedinfo{ display: none; color: #993300; } 
+.commentsList{ margin-top: 20px;}
+.commentsList ul{ padding: 0 15px 10px 0px;}
+.commentsList ul li{ color: #666666; padding: 15px  0; border-bottom: 1px dashed #E1E1E1; }
+.commentsList ul li:last-child{ border-bottom: 1px dashed #E1E1E1;} 
+.commentsList ul li .commentTBox{ margin-left: 0px;}
+.commentsList ul li .commentTime{ margin-top: 5px;}
+.commentsList ul li .commentTxt{table-layout:fixed; word-break: break-all; overflow:hidden; color: #000000; }
+.commentsList ul li .commentTxt .name{ color: #F59201; margin-right: 5px;}
+.commentsList ul li .commentTxt .speakColor{ color: #999999;}
+.commentsList .indexList li{ border-top:none; border-bottom: 1px solid #E1E1E1;}
+.commentsList .indexList li:last-child{ border-bottom: 1px solid #E1E1E1;}
+.commentsList ul li .commentTxt a{ color: #333333; }
+.commentsList ul li .commentTxt a:hover{ text-decoration: none; color: #999999; }
+
+
+.envelopeBox { width: 80%; padding: 10px; margin: 15px 0; overflow: hidden;}
+.envelopeBox .envelopeHeader{width: 100%; position: relative; background-color: #f6f6f6; padding-left: 15px; border-bottom: 1px solid #b5b5b5; margin-bottom: 10px;  }
+.envelopeBox .envelopeHeader i{ position: absolute; display: block; }
+.envelopeHeader i.l_t{ background: url('/image/banban/notice/l_t_ioc.png') no-repeat;  width: 28px; height: 14px; top:-10px; left: -9px; z-index: 1; }
+.envelopeHeader i.r_t{ background: url('/image/banban/notice/r_t_ioc.png') right no-repeat;  width: 34px; height: 17px; top:-12px; right: -13px; z-index: 1;}
+.envelopeHeader i.t_t{ background: url('/image/banban/notice/t_t_ioc.png') repeat-x; height: 17px; top:-10px; width: 100%  }
+.envelopeHeader i.l_b{ background: url('/image/banban/notice/l_b_ioc.png') repeat-x; width: 34px;  height: 31px; bottom: -22px; left: -9px; z-index: 1; }
+.envelopeHeader i.r_b{ background: url('/image/banban/notice/r_b_ioc.png') right repeat-x; width: 34px;  height: 31px; bottom: -22px; right: -13px; z-index: 1;}
+.envelopeHeader i.b_b{ background: url('/image/banban/notice/b_b_ioc.png') repeat-x; width: 100%;  height: 31px; bottom: -22px;left: 0; }
+.envelopeHeader i.l_l{ background: url('/image/banban/notice/l_l_ioc.png') left repeat-y;   width: 14px;  height: 100%; bottom: 0;left: -9px;  }
+.envelopeHeader i.r_r{ background: url('/image/banban/notice/r_r_ioc.png') right repeat-y;   width: 14px;  height: 100%; bottom: 0; right: -13px; }
+.envelopeHeader .timestamp{ background: url('/image/banban/notice/stamp_ioc.png') no-repeat; width: 143px; height: 83px;  position: absolute; right: 20px; top:30px;text-align: center; overflow: hidden; }
+.timestamp span.time{ padding-top: 32px; display: inline-block;  }
+.envelopeHeader .center {  padding: 10px 0px;}
+.envelopeHeader p.last{ text-align: right; }
+.envelopeHeader .addresseeBox { min-height: 50px; *height: auto;*min-height: auto; margin-right: 35%; margin-bottom: 10px; }
+.envelopeHeader .center .envelopePicBox{ padding-bottom: 5px;  }
+.envelopePicBox p{ padding: 3px 0; }
+.envelopePicBox p.picTitle{ font-size: 21px;  color: #626262;}
+.envelopePicBox p.infTitle{font-size: 14px; color: #616161;}
+.envelopePicBox p.infTitle span{  }
+.envelopeHeader .envelopePicBox .icon{ background: url(/image/banban/big-icon.png)  no-repeat; display: inline-block; float: left; vertical-align: -15px; margin-right: 10px;}
+.envelopeHeader .envelopePicBox .icon1 { background-position: -4px -2px; width: 42px; height: 41px; }
+.envelopeHeader .envelopePicBox .icon2 { background-position: -3px -57px; width: 44px; height: 50px; }
+.envelopeHeader .envelopePicBox .icon3 { background-position: -4px -120px; width: 42px; height: 50px; }
+.envelopeHeader .envelopePicBox .icon4 { background-position: -2px -182px; width: 46px; height: 44px; }
+.envelopeHeader .envelopePicBox .icon5 { background-position: -3px -235px;  width: 45px; height: 45px; }
+.envelopeHeader .envelopePicBox .icon6 { background-position: 0px -286px;  width: 50px; height: 50px; }
+.envelopeHeader .envelopePicBox .icon7 { background-position: 0px -340px;  width: 50px; height: 50px; }
+
+.envelopeCenterBox { margin: 0;  }
+.envelopeCenterBox  .box{ padding: 30px; }
+.envelopeCenterBox .title{ font-size: 18px; color: #333333; }
+.borderBtm{border-bottom: 2px dotted #dfddcf; }
+.bBtm{border-bottom: 1px solid #dfddcf;}
+
+ 
+.echartslistBox{   }
+.echartslistBox .title{padding: 0 15px 0 50px; font-size: 13px; font-weight: 700; color: #666666; background: #e5e4da; height: 32px; line-height: 32px; text-align: center;}
+.echartslistBox span.center{  float: right;  }
+.echartslistBox span.right{  float: right; margin-left: 90px; }
+.echartslistBox span.right1{  float: right; margin-left: 135px; }
+.echartslistBox ul.echartslist{ overflow: hidden; }
+ul.echartslist li.item{ border-bottom: 1px solid #e5e4da;  }
+ul.echartslist li.item .itemT{ height: 40px; line-height: 40px; padding: 0 15px 0 30px; margin-left: 20px; cursor: pointer; overflow: hidden;}
+ul.echartslist li.item .onIoc{ background: url('/image/banban/notice/on_ioc.png') left center no-repeat; }
+ul.echartslist li.item .offIoc{ background: url('/image/banban/notice/off_ioc.png') left center no-repeat; }
+ul.echartslist li.item span.eyeioc{ background: url('/image/banban/notice/eye_ioc1.png') right center no-repeat; padding-right: 30px;}
+ul.echartslist li.item span.eyeiocs{ background: url('/image/banban/notice/eye_ioc2.png') right center no-repeat; padding-right: 30px;} 
+.typeBox .iphoneGuradians{ display: inline-block; width:18px; height: 30px;  }
+.typeBox .iphoneIco{background: url('/image/banban/iphone_ioc.png') center top no-repeat;}
+.typeBox .iphoneIco1{background: url('/image/banban/iphone_ioc.png') center bottom no-repeat; margin-top: 3px;}
+.typeBox .pcGuradians{display: inline-block; width:30px; height: 30px;margin-top: 2px; } 
+.typeBox .pcIco{background: url('/image/banban/computer_ico.png') center top no-repeat;}
+.typeBox .pcIco1{background: url('/image/banban/computer_ico.png') center bottom no-repeat;}
+.itemT .iphoneGuradians,.itemT .pcGuradians{ margin-top: 6px!important; }
+ul.echartslistR{ border-top: 1px solid #e5e4da;  overflow: hidden; display: none; padding: 10px 30px 10px 50px; }
+ul.echartslistR li{ height: 35px; line-height: 35px; text-align: center; }
+.echartsSearch{ padding: 5px 10px; background: #EBEBEB;  }
+.echartsSearch input[type="text"].search{ width: 615px; *width: 610px; border-radius: 3px; border: 1px solid #d8d8d8; margin-right: 0; }
+.echartsSearch .btn{padding: 4px 20px 5px 20px; *padding: 3px 20px 0px 20px; margin-right: 0; *margin-top: 1px; position: absolute; right: 11px; top:5px;}
+
+.echartsFooter{ padding: 10px 25px;  }
+.echartsFooter .cuntBox{ float: left; font-size: 14px; color: #999999; }
+.echartsFooter .cuntBox span{ color:#F59201; margin: 0 5px; }
+
+.table{*border-bottom:1px solid #dddddd;  }
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { padding: 5px 0px 5px 10px; vertical-align: middle; height: 35px; line-height: 25px;border-bottom: 1px solid #dddddd;}.tables > caption + thead > tr:first-child > th, .tables > colgroup + thead > tr:first-child > th, .tables > thead:first-child > tr:first-child > th, .tables > caption + thead > tr:first-child > td, .tables > colgroup + thead > tr:first-child > td, .tables > thead:first-child > tr:first-child > td {border-top: 1px solid #dddddd;}
+.table>tbody:last-child > tr:last-child > td{ border-bottom:1px solid #dddddd;}
+.table>tbody:last-child > tr.remindBox:last-child > td { border-bottom: none;}
+.tableC > thead > tr > th ,.tableC > tbody > tr > td{ text-align: center;} 
+
+@media screen and (min-width:0px) and ( max-width:1000px){ 
+    .envelopeBox{ width: 100%; }
+} 
+@media screen and (min-width:1000px) and ( max-width:1200px){ 
+    .envelopeBox{ width: 90%; }
+}
+@media screen and (min-width:1200px) and ( max-width:1200px){ 
+    .envelopeBox{ width: 80%; }
+}

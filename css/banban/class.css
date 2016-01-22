@@ -1,0 +1,254 @@
+/*
+ 我的班班 页面 样式
+*/
+/* Created on : 2015-1-22, 15:42:29Author     : Ht
+*/
+/*-----班级列表----*/
+a.colorLink{color: #993300;vertical-align: baseline;}
+a.btnOn {color: #993300;}
+a.btnOn span.arrow {background: url('/image/banban/class/on-off_ioc.png') no-repeat;display: inline-block;width: 13px;height: 13px;vertical-align: -3px;}
+a.btnOn span.on {background-position: 0 0;}
+a.btnOn span.off {background-position: 0 -17px;}
+.fareBox{padding: 6px 20px;position: relative;float: right;color: #ffffff;border-radius: 3px;background-color: #f59201;}
+.fareBox a{color: #ffffff;vertical-align: baseline;}
+.fareBox span.ico{display: block;position: absolute;left: -35px;top:-11px;width: 50px;height: 50px;background: url('/image/banban/class/y_ico.png') no-repeat;}
+.classStitle{font-size: 18px; margin-bottom: 10px;}
+.classTitle {font-size: 24px;margin: 20px 0;text-align: center;}
+
+.classTitle span.sName {font-size: 14px;vertical-align: 2px;}
+.listTopTite {text-align: center;}
+.listTopTite img {display: inline;}
+.classBox {min-height: 500px;}
+.classBox .schoolItme {margin-bottom: 30px;overflow: hidden;}
+.classBox .schoolName {margin: 20px 0px 0;font-size: 16px;}
+.classBox .classListBox {width: auto;padding-top: 20px;overflow: hidden;}
+.classListBox li {float: left;width: 260px;margin-right: 20px;margin-bottom: 20px;}
+.classListBox li a {position: relative;display: block; color: #000;/*padding: 20px; border: 2px solid #E5E4DA; border-radius: 10px; background-color: #f5f4eb; overflow: hidden;*/}
+.classListBox li a em {position: absolute;right: -2px;top: -2px;width: 47px;height: 46px;background: url('/image/banban/class_ioc.png') 0 0px no-repeat;}
+.classListBox li a .isMyChild {z-index: 1001;display: none;position: absolute;font-size: 13px;padding: 5px;top: -20px;left: 100px;background: #fff;border: 1px solid #E5E4DA;min-width: 150px;color: #000000;-webkit-box-shadow: 0px 0px 5px rgba(229, 228, 218, .8);-moz-box-shadow: 0px 0px 5px rgba(229, 228, 218, .8);box-shadow: 0px 0px 5px rgba(229, 228, 218, .8);word-break: break-all;}
+.classListBox li a h3.name {padding-top: 10px;padding-bottom: 5px;font-size: 22px;color: #fff;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;/*margin: 5px 0;*/}
+.classListBox li a h3.nameIco {background: url('/image/banban/class_ioc.png') right -59px no-repeat;}
+.classListBox li a p.infos {color: #878681;font-size: 12px;margin: 1px 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.classListBox li a:hover .isMyChild {display: block;}
+.classListBox li a:hover {/*border: 2px solid #f59201; background-color: #F5F4EB;*/}
+.classListBox li a.noData:hover {border: 2px solid #E5E4DA;background-color: #fff;}
+.classListBox li a .identityPic {float: left;display: inline;text-align: center;}
+.classListBox li a .identityPic p {margin-top: 15px;color: #878681;font-size: 12px;}
+.classListBox li a .classInfo {padding: 12px 0 10px 30px;background-color: #f5f4eb;border: 2px solid #c7c6b0;border-top: 0 none;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.classListBox li a .classInfo span.code {color: #f59201;}
+.classListBox li a .classInfo span.tit {color: #000000;}
+.classListBox li a .classInfo p.infos {background: url('/image/banban/class/class_ico.png') no-repeat;padding-left: 22px;margin-bottom: 8px;}
+.classListBox li a .classInfo p.ipic_1 {background-position: 0 -25px;}
+.classListBox li a .classInfo p.ipic_2 {background-position: 0 -49px;}
+.createBtnPup {width: 245px;border: 1px solid #E5E4DA;background: #fff;margin-top: 1px;position: absolute;z-index: 1;left: 0;top: 35px;display: none;}
+.createBtnPup li {height: 40px;line-height: 40px;border-bottom: 1px solid #E5E4DA;}
+.createBtnPup li:last-child {border-bottom: none;}
+.createBtnPup li:hover {background-color: #E5E4DA;}
+.createBtnPup li a {padding-left: 30px;display: block;height: 40px;line-height: 40px;vertical-align: 0;color: #000000;}
+.createBtnPup li a b.color {color: #f59201;}
+.createBtnPup li a b {color: #993300;}
+
+/*----class 班级-----*/
+.classTableBox {}
+.classTableBox .classInfoTitle {color: #333;font-size: 18px;height: 30px;line-height: 30px;margin-bottom: 10px;}
+.classTableBox table tbody > tr > td {height: 50px;vertical-align: middle;color: #333333;padding-left: 12px;}
+.classTableBox table td.classTitleTd {width: 220px;}
+.classInfoTitle {color: #333;font-size: 18px;height: 30px;line-height: 30px;margin-bottom: 10px;}
+.classMemberBox {padding: 15px;}
+.classMemberBox .tableHead th {color: #999999;}
+.classMemberBox table td, .classMemberBox table th {text-align: left;vertical-align: middle;}
+.classMemberBox table td .name, .classMemberBox table th .name {width: 100px;overflow: hidden;padding-left: 15px;text-align: left;height: 30px;line-height: 30px;text-overflow: ellipsis; white-space: nowrap;word-wrap: break-word;vertical-align: middle;cursor: default;}
+.classMemberBox table td .inilebox, .classMemberBox table th .inilebox {display: inline-block;line-height: 30px;text-align: left;}
+.classMemberBox table td .mobileIoc {background: url('/image/banban/mobile_ioc.jpg') no-repeat;}
+.classMemberBox table td.operation a {color: #993300;}
+.classMemberBox table td.operation a:hover {color: #993300;text-decoration: none;}
+.classMemberBox table td.operation a.none {color: #333333;cursor: default;}
+.classMemberBox .classBtnBox { padding: 10px 0;}
+.classMemberBox .memberListBox {font-size: 14px;color: #000;margin-bottom: 20px;overflow: hidden;word-wrap: break-word;word-break: normal;}
+.classMemberBox .memberListBox a {text-decoration: underline;}
+.classMemberBox .memberListBox a.mychild {margin-right: 20px;vertical-align: 0px;}
+.classMemberBox .memberListBox a.mychild:hover {text-decoration: underline;}
+.classMemberBox .memberListBox span {color: #0066FF;}
+.memberListBox ul {overflow: hidden;margin-top: 10px;}
+.memberListBox ul li {float: left;width: 175px;margin: 10px 0;background: url(/image/banban/stu-icon.png) no-repeat;padding: 5px 0 5px 30px;}
+.courseBox {display: none;position: absolute;background: #ffffff;border: 1px solid #E1E1E1;box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .03);width: 370px;right: -200px;top: -10px;z-index: 1;}
+.courseBox li {text-align: left;}
+td.operation .courseBox li a {overflow: hidden;text-decoration: none;display: block;margin: 0;padding: 3px 15px;color: #333333;}
+td.operation .courseBox li a span {overflow: hidden;}
+td.operation li a:last {border-bottom: none;}
+td.operation .courseBox li a:hover {color: #333333;}
+td.operation .courseBox li a.red {color: #993300;}
+.courseBox li a em {font-size: 21px;}
+.courseBox li a em.mobile {float: left;height: 30px;width: 21px;margin: 0px 10px 0 0;}
+td.operation .mobileBox {position: relative;width: 20px;display: inline-block;margin-left: 5px;}
+td.operation .mobileBox a.mobileHovrer {display: inline-block;padding: 0;height: 16px;width: 16px;background: url('/image/banban/mobileHover_ioc.jpg') no-repeat -1px -24px;}
+td.operation .mobileBox a.mobileHovrer:hover {background: url('/image/banban/mobileHover_ioc.jpg') no-repeat -1px -3px;}
+td.operation .mobileBox .courseBox {right: -150px;top: -10px;}
+.typeBox .iphoneGuradians {display: inline-block;width: 18px;height: 30px;vertical-align: -2px;}
+.typeBox .iphoneIco {background: url('/image/banban/iphone_ioc.png') center top no-repeat;}
+.typeBox .iphoneIco1 {background: url('/image/banban/iphone_ioc.png') center bottom no-repeat;}
+.typeBox .pcGuradians {display: inline-block;width: 30px;height: 30px;margin-top: 5px;vertical-align: -2px;}
+.typeBox .pcIco {background: url('/image/banban/computer_ico.png') center top no-repeat;}
+.typeBox .pcIco1 {background: url('/image/banban/computer_ico.png') center bottom no-repeat;}
+
+/* ----班级信息修改----*/
+.updateBox {padding: 20px 0;}
+.updateBox .title {font-size: 18px;color: #333333;margin-bottom: 10px;}
+.updateBox .remind {padding-bottom: 15px;}
+.updateBox .remind span {border-radius: 3px;background: #fcf8e3 url('/image/banban/reimndIco.jpg') no-repeat left center;color: #8a6d3b;border: 1px solid #f5e8a3;display: inline-block;padding: 8px 40px;}
+.updateBox .courseBox {width: 200px;}
+.updateBox .courseBox li {height: 40px;border-bottom: 1px solid #E1E1E1;}
+.updateBox .courseBox li a {display: block;height: 40px;line-height: 40px;padding: 0 10px;color: #666666;}
+.updateBox .courseBox li a:hover {color: #993300;text-decoration: none;background: #dddddd;}
+.updateBox .courseBox li a.red {color: #993300;background: #dddddd;}
+
+/*------老师邀请页面---------*/
+.invtesBox {}
+.invtesBox table tbody > tr > td, .invtesBox table thead > tr > th {height: 30px;padding: 5px;}
+.invtesBox .classInfoTitle {font-size: 13px;margin-bottom: 5px;color: #000000;}
+.invtesBox .danwonInfo {font-size: 13px;color: #999999;}
+.invtesBox .danwonInfo a {color:#f59201;}
+.danwonInfo a:hover{text-decoration: underline;}
+#datatable >tr > td, #previewTable .table> thead >tr > th{text-align: center;color:#000000;}
+#datatable >tr > td p.error{color: #e41904;}
+#datatable span{padding: 2px 0 2px 25px;color: #e41904; background: url('/image/banban/class/msg_ioc.png') no-repeat;}
+#datatable .msgError{  background-position: left 0;}
+#datatable .msgRight{  background-position: left -30px;}
+.invtesBox .PopFile {color: #999999;line-height: 30px;margin-left: 120px;}
+.invtesBox .stList {width: 486px;margin: 0;padding-top: 10px;}
+.invtesBox span.icoBox {padding-left: 25px;height: 20px;line-height: 20px;display: inline-block;}
+.invtesBox span.succesIco {background: url('/image/banban/ioc_error_or_succse.png') left bottom no-repeat;}
+.invtesBox span.errorIco {color: red;background: url('/image/banban/ioc_error_or_succse.png') left top no-repeat;}
+.invtesBox h2 {margin: 60px 0 30px 0;font-size: 21px;font-weight: 600;color: #F7A328;}
+.invtesBox p {color: #999999;}
+.invtesBox p span {color: #993300;}
+.invtesBox .btnBox {margin-top: 40px;}
+.tableForm .inputBox input[type="text"].sx, .tableForm .inputBox select.sx {width: 100px;margin-right: 5px;}
+.tableForm .rowElem {text-align: left;padding-left: 15px;margin-bottom: 10px;}
+.tableForm .rowElem .name {display: block;width: 110px;height: 36px;margin-bottom: 5px;float: left;}
+.fieldsetBox {}
+.fieldsetBox fieldset {border: 2px dotted #E5E4DA;border-radius: 15px;padding: 0 20px 20px 20px;display: inline-block;}
+.fieldsetBox fieldset legend {border: 1px double #E5E4DA;background: #f5f4eb;font-size: 14px;color: #000;border-radius: 15px;width: auto;}
+
+/*------分享样式----------*/
+.share {border: 1px solid #E5E4DA;overflow: hidden;text-align: center;padding: 20px;position: absolute;background: #fff;}
+.share a.shareHide {background: url('/image/banban/class/off_x.png') no-repeat;width: 16px;height: 16px;display: inline-block;right: 0;position: absolute;}
+.share .bdsharebuttonbox {margin-top: 10px;}
+.bdsharebuttonbox a {width: auto !important;height: auto !important;margin: 0 15px 10px 0px !important;text-indent: 0 !important;float: none !important;color: #000 !important;line-height: 20px !important;}
+/*.bdsharebuttonbox a:hover{ border:2px solid #f59201; }*/
+.bdsharebuttonbox .sqq {background-image: url(/image/banban/activity/qq.jpg);}
+.bdsharebuttonbox .qzone {background-image: url(/image/banban/activity/qzone.jpg);}
+.bdsharebuttonbox .sina {background-image: url(/image/banban/activity/weibo.jpg);margin-right: 0px !important;}
+.bdshare-button-style0-32 {background-image: none;}
+.bdshare-button-style0-32 a {background-image: none;}
+.bdshare-button-style0-32:after {content: "" !important;}
+.toLeadInfo{}
+.toLeadInfo .tPicR{ background: url('/image/banban/class/msg_pic.png') no-repeat; background-position: left -1px; font-size: 14px; }
+.tPicM{ float: left; padding-left: 30px; background: url('/image/banban/class/msg_pic.png') no-repeat; background-position: left -23px; font-size: 14px; }
+.createDone {width: 700px;margin: 0 auto;margin-top: 50px;position: relative;}
+.createDone fieldset {text-align: center;}
+.createDone fieldset legend {width: 145px;height: 36px;line-height: 36px;margin-left: 195px;}
+.createDone fieldset legend span {width: 145px;display: inline-block;text-align: center;color: #000;}
+.createDone fieldset img {display: inline;text-align: center;}
+.listCreateBox {position: relative;overflow: hidden;margin-top: 10px;}
+.listCreateBox li {float: left;width: 218px;text-align: center;}
+.listCreateBox li.borderR {border-right: 1px solid #E5E4DA;}
+.listCreateBox li.borderR a.iocBox{display: inline-block;width: 96px;height: 96px;}
+.listCreateBox li.borderR a.inputLinks {  background-image: url(/image/banban/class/impout_ioc1.png);}
+.listCreateBox li.borderR a.inputLinks:hover {background-image: url(/image/banban/class/impout_ioc1.png);}
+.listCreateBox li.borderR a.perfectInfor { background-image: url(/image/banban/class/perfect_ioc1.png);}
+.listCreateBox li.borderR a.perfectInfor:hover {background-image: url(/image/banban/class/perfect_ioc1.png);}
+.listCreateBox li.boxR {}
+.listCreateBox li.boxR a {display: inline-block;width: 96px;height: 96px;background-image: url(/image/banban/class/share_ioc1.png);}
+.listCreateBox li.bdsharebuttonbox a.boxRa {float: none !important;width: 96px !important;height: 96px !important;padding: 0px !important;display: inline-block;border-radius: 0px;margin-right: 0px !important;background-position: center center;border: none;margin: 0px !important;}
+.listCreateBox li.bdsharebuttonbox a:hover {border: none;}
+.listCreateBox li.boxR a:hover {background-image: url(/image/banban/class/share_ioc1.png);opacity:1;filter:alpha(opacity=100);  }
+.listCreateBox li.boxR p.textLeft {margin: 20px 11px 20px 25px;}
+.listCreateBox li p {margin: 20px 25px;}
+.listCreateBox li p.textLeft {text-align: left;color: #666666;}
+.createDone .share {width: 472px;top: 160px;left: 200px;}
+.navModDone .share {width: 472px;top: 40px;left: 100px;}
+
+/*---------加入班级搜索页面------------*/
+.resultBox {overflow: hidden;padding-top: 30px;width: auto;display: inline-block;*float: left;}
+.resultBox fieldset legend {height: 36px;line-height: 36px;padding: 0 20px;color: #000;}
+.resultBox fieldset legend span.orange {font-weight: 600;color: #f59201;}
+.resultBox .noTip {text-align: center;font-size: 14px;}
+.resultBox .noTip p {margin-top: 15px;}
+.resultBox .noTip img {display: inline;}
+.resultList {overflow: hidden;}
+.resultList li {float: left;margin-right: 25px;width: 275px;height: 148px;border: 1px solid #E5E4DA;background: #f5f4eb;border-radius: 6px;padding: 12px 15px;margin-bottom: 15px;}
+.resultList li:last-child {margin-right: 0;}
+.resultList li .classPicS {float: left;}
+.resultList li .cInfoBox {margin-left: 65px;margin-bottom: 10px;}
+.cInfoBox .name a {display: block;color: #000;font-size: 20px;margin-bottom: 10px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.cInfoBox p.infos {background: url('/image/banban/class/class_ico.png') no-repeat;padding-left: 22px;margin-bottom: 5px;color: #878681;}
+.cInfoBox p.infos a {display: block;color: #878681;font-size: 12px;height: 17px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.cInfoBox p.ipic_1 {background-position: 0 -72px;}
+.cInfoBox p.ipic_2 {background-position: 0 -25px;}
+.resultList li .addBtnBox {clear: both;text-align: right;}
+.addBtnBox a.addBtn {padding: 6px 10px;background: #f5f4eb;margin-right: 0;}
+.addBtnBox a.addBtn:hover {background: #D2D2D2;}
+.addBtnBox a.addBtn img {display: inline;margin-right: 5px;}
+.inclassBox .resultList li {height: 122px;min-width: 245px;}
+.inclassDone {margin-top: 40px;}
+.inclassDone fieldset legend {height: 36px;line-height: 36px;padding: 0 20px;}
+.inclassDone fieldset legend span.orange {color: #f59201;}
+.rowBox {}
+.tableForm .rowElem .errorTip {text-align: left;}
+#tableFormAdd td span.title {display: block;margin-top: 9px;font-size: 13px;}
+
+/******更改班主任*****/
+.teacherListBox {overflow: hidden;width: 100%;margin-top: 5px;}
+.teacherListBox li {float: left;width: 175px;*width: 155px;padding-left: 30px;*padding-left: 15px;}
+@media screen and (min-width: 800px) and (max-width: 900px) {.listTopTite img {    display: inline;   
+    // width: 96%;}}
+@media screen and (min-width: 0px) and (max-width: 800px) { .listTopTite img {    display: inline; // width: 96%;}}
+
+/* banban web 3.8 */
+.class-name {text-align: center;border-top-left-radius: 10px;border-top-right-radius: 10px;overflow: hidden;}
+.class-teacher {background-color: #25b6b7;}
+.class-parent {background-color: #25b76a;}
+.class-guardian {background-color: #b76325;}
+.class-name p {height: 18px;margin-bottom: 5px;color: #fff;opacity: .9;}
+.school-item-head {margin-top: 20px;font-size: 18px;font-weight: 600;/*letter-spacing: 1px;*/}
+.stress {color: #f59201;font-size: 20px;}
+.class-icon {background: url('/image/banban/class_icon.png') no-repeat;}
+.class-icon-logo {position: absolute;top: -1px;right: -1px;display: block;width: 45px;height: 44px;background-position: 0 -44px;}
+.class-icon-tag {position: absolute;right: 15px;bottom: 20px;display: block;width: 50px;height: 44px;background-position: 0 0;}
+.new {position: absolute;top: -12px;right: -10px;display: block;width: 31px;height: 20px;background: url('/image/banban/class/new.png') no-repeat;}
+.inClassBtnPup {position: relative;}
+.join-class-btn {position: relative;}
+a.class-create-setting {display: block;margin-top: 12px;margin-bottom: 10px;color: #993300;font-size: 16px;}
+a.class-create-setting i {font-size: 12px;}
+.class-attr {margin: 20px 0;}
+.class-attr-head {padding-top: 20px;padding-bottom: 10px;font-weight: 600;}
+.class-attr-list li {color: #000;padding-top: 5px;padding-bottom: 5px;}
+/*.class-attr-list li:after {content: "";display: table;clear: both;}*/
+
+.class-attr-list .attr-label {float: left;display: block;width: 80px;color: #666;}
+.class-attr-list .class-info{display: block;color: #666;}
+.class-attr-edit {display: inline-block;width: 18px;height: 18px;margin-left: 10px;background: url("/image/banban/class/edit_icon.png") no-repeat;}
+.class-attr-orange {font-weight: 700;color: #f59201;}
+.attr-mark-text {color: #666;}
+.class-apply-msg .table td {padding-top: 1px;padding-bottom: 5px;}
+.class-apply-msg .table a {display: inline-block;margin-left: 10px;margin-right: 10px;color: #993300;}
+.class-apply-stress {color: #000;font-weight: 600;}
+.apply-btn {text-align: center;}
+.apply-result {display: block;color: #666;text-align: center;}
+.classMemberBox .memberListBox span.careman {color: #000;margin-right: 10px;}
+.invite-head {padding: 10px 0;margin-top: 15px;font-size: 22px;font-weight: 600;border-bottom: 1px solid #e5e4da;}
+.invite-box {padding: 12px;width: 485px;border: 1px solid #d5d5d5;border-radius: 3px;}
+.invite-action {padding-top: 20px;}
+.invite-done-head {margin-top: 20px;padding-top: 10px;padding-bottom: 10px;font-size: 20px;color: #f59201;}
+.uninvite-table {margin: 10px 0;}
+.uninvite-table td {padding: 8px 0 8px 10px;border: 1px solid #000;}
+.uninvite-head {margin-top: 30px;}
+.uninvite-table td.name {width: 100px;}
+.uninvite-table td.phone {width: 180px;}
+.guardian-label {display: inline-block;width: 100px;}
+.modify-box {width: 200px;position: absolute;top: 0;right: 0;padding: 10px;border: 1px solid #e6e5dd;border-radius: 3px;box-shadow: -2px 0 5px #eeeeee,0 -2px 5px #eeeeee,0 2px 5px #eeeeee,2px 0 5px #eeeeee;}
+.guardian-list {margin-top: 15px;padding-bottom: 100px;}
+.guardian-list li {padding-top: 10px;padding-bottom: 10px;}
+input.modify-input {margin-top: 8px;padding-left: 10px;padding-right: 10px;border: 1px solid #b0b0b0;border-radius: 5px;}
+.modify-action {padding-top: 10px;text-align: center;}

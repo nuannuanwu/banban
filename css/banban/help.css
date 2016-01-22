@@ -1,0 +1,41 @@
+/*
+    网站班主页面样式
+*/
+/* 
+    Created on : 2015-4-30, 14:58:51
+    Author     : owen
+*/
+
+.helpCentent{ width: 100%; height: auto; overflow: hidden; padding: 30px 0; }
+.helpCentent .helpBox{ border-radius: 20px; padding: 33px 20px; position: relative;}
+.helpCentent .helpBox .helpT{ zoom: 1;position: absolute; top:-20px; left: 50px; }
+.helpCentent .publicHepl{ width: 100%; background-color: #f4d9c8;}
+.helpCentent .teacherHepl{ width: 49%; float: left;background-color: #f3dae0;}
+.helpCentent .statusHepl{ margin-left: 51%; background-color: #d9e2f3;}
+
+.hListBox{ overflow: hidden;margin-top: 10px; }
+.hListBox ul {}
+.hListBox ul li{ float: left; background: url('/image/banban/help/itmeBg.png') no-repeat; width: 239px; height: 85px; margin: 0 20px 20px 0; }
+.hListBox ul li a{ display: block; padding: 15px 5px 15px 15px; color: #000000;}
+.hListBox ul li a span{ float: left;  }
+.hListBox ul li a .info{ margin-left: 65px;  }
+.hListBox ul li a p.name{ font-size: 18px; margin-bottom: 5px; }
+.hListBox ul li a p.text{ font-size: 13px; color: #999999; }
+
+.helpListBox{ overflow: hidden; margin: 0 auto; background-color: #ffffff; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
+.helpListBox ul{}
+.helpListBox ul li{ border-bottom: 1px solid #e5e5e5; }
+.helpListBox ul li a{ display: block; color: #000000; height: 50px; line-height: 50px; padding-left: 5px; }
+.helpListBox ul li a:hover{ background-color: #f5f4eb; color: #993300; }
+.btnBox{ padding-top: 10px; }
+.btnBox .remind span{ border-radius: 3px; background: #fcf8e3 url('/image/banban/reimndIco.jpg') no-repeat left center; color: #8a6d3b; border: 1px solid #f5e79e; display: inline-block; padding: 8px 40px;}
+
+.helpTitle{ position: relative; text-align: center; color: #000000; font-size: 18px; overflow: hidden; border-bottom: 1px solid #e5e4da; padding-bottom: 20px; line-height: 30px; }
+.helpTitle a.btn{ position: absolute; left: 0; top:0; }
+.centerText{ margin-top: 20px; overflow: hidden; zoom: 1; }
+.centerText p{ color: #000000; font-size: 13px; padding: 10px 0; }
+.centerText p.title{font-weight: 700;}
+.centerText p b{ color: #f59201;}
+.centerText p.textIco{ height: 54px; line-height: 35px; padding-left: 60px; margin-top: 15px; }
+.centerText p.textIco1{ background: url('/image/banban/help/l_ico1.png') left no-repeat;}
+.centerText p.textIco2{ background: url('/image/banban/help/l_ico2.png') left no-repeat;}

@@ -1,0 +1,122 @@
+/* 
+*  发送消息 
+*  Created on : 2015-1-22, 15:44:04
+*  Author     : Ht
+*/ 
+div.c_o,span.c_o{ color: #f56e01;}
+div.c_o i,span.c_o i{ font-style: normal;  font-size: 15px;}
+span.c_r,a.c_r{color: #ff0000;}
+span.c_r i,a.c_r i{  font-style: normal;  font-size: 15px;}  
+
+.senNavBox{ overflow: hidden;}
+.applicationList{ width: 100%; height: 90px; }
+.applicationList li{ cursor:default; float: left; width: 180px; height: 90px; border-right: 1px solid #e5e4da;}
+.applicationList li.application{ padding: 9px;  border: 1px solid #e5e4da; background: #f5f5f5; position: relative; }
+.applicationList li .applicationItme{  width: 100%; zoom: 1; }
+.applicationItme a span.navIco{ display: none; position: absolute; bottom:-1px; *bottom:18px; left: 45%; width: 13px; height: 8px; background:#FFFFFF url('/image/banban/sendNavIco.png') center no-repeat; z-index: 1; } 
+.applicationList li .applicationItme a{ position: relative; display: block;height: 90px; *height: 70px; padding: 20px 10px 0 10px;} 
+.applicationList .applicationItme a.focus{ background-color: #F5F4EB; border-bottom: 8px solid #F59201; *height: 62px;  }
+.applicationList li .applicationItme a span.send-info{ display: block; font-size: 18px; margin: 6px 0 5px 55px; *overflow: hidden;text-overflow : ellipsis;white-space : nowrap;}
+.applicationItme.applicationItme a.focus span.applicationTitle { color: #000000; }
+.applicationItme.applicationItme a:hover span.applicationTitle { color: #000000; }
+.applicationList li .applicationItme a span.sendPic{ display: block; width: 50px; }
+.applicationList li .applicationItme a span.applicationTitle{ color: #993300; margin-bottom: 6px; line-height: 20px;}
+.applicationList li .applicationItme a span.applicationInfo { color: #999999;font-size: 12px;}
+.applicationList li .stampBtn .stamp{ background-position:center -22px }
+.applicationItme a span.new{ position: absolute; top:22px; right: 8px;}
+.inputUserBox {border:1px solid #aaa; border-radius: 3px; min-height: 40px; *min-height: 30px; padding: 1px; overflow-x: hidden; overflow-y: auto; max-height: 200px;}
+.inputUserBox .addTtmeBtn { float: right; margin-right: 0; *height: 25px; line-height: 20px; padding:8px 15px 2px 15px;}
+.inputUserBox .addTtmeBtn em{ display: inline-block; height: 20px; width: 24px; background: url('/image/banban/adBtnIoc.png') center center no-repeat; }
+.pReceiver{ color: #999999; margin-bottom: 5px; } 
+.selectBox{ position: relative; display: inline-block; *display: inline; min-width: 120px; height: 28px; font-size: 14px; line-height: 28px; padding: 0 25px 0 10px; border: 1px solid #e5e4da; cursor: pointer; zoom: 1; background:#FFFFFF url('/image/banban/selected_ico.png') right center no-repeat;}
+.selectBox .sOptionBox{ display: none; position: absolute; width: 180px; right: -1px; top: 25px;  max-height: 220px; *height: 150px; overflow-x: hidden; overflow-y: auto; }
+.selectBox .sOptionList{width: 160px;padding-top:15px; border: 1px solid #e5e4da; background: #FFFFFF;-webkit-box-shadow: 0px 0px 6px rgba(229,228,218, .8); -moz-box-shadow: 0px 0px 6px rgba(229,228,218, .8); box-shadow: 0px 0px 6px rgba(229,228,218,.8); }
+.selectBox .sOptionList li{ }
+.selectBox .sOptionList li a{ cursor: default; display: block; height: 40px; line-height: 40px; padding: 0 15px; color: #000000; overflow: hidden;}
+.selectBox .sOptionList li a label{cursor: pointer; font-size: 14px; width: 88px; overflow: hidden;text-overflow: ellipsis;white-space : nowrap;}
+.selectBox .sOptionList li a.addbox{cursor: pointer; background-color:#f5f4eb; border-top:1px solid #e5e4da; }
+.selectBox .sOptionBox li a span.icoBtn{display:none; width:16px; height: 15px; vertical-align: -3px; background: url('/image/banban/selected_close.png') no-repeat; cursor: pointer;}
+.selectBox .sOptionList li a:hover span.closeIco{ background-position: 0 0; display: inline-block;}
+.selectBox .sOptionList li a span.addItme{background-position: 0 -18px; margin-right: 15px; display: inline-block;}
+.selectBox .sOptionList li a:hover{ background: #f5f4eb;}
+.selectBox:hover .sOptionBox{ display: block; }
+
+.selectUserTitle{ font-size: 16px; }
+.checkedUserBox{ overflow-x: hidden; overflow-y:auto;}
+.checkedUserBox .selectUserTitle{ font-size: 16px; }
+.checkedUserBox .userListBox{ clear: both; position: relative; line-height: 20px; margin: 5px 0; overflow: hidden;}
+.userListBox li{ float: left; margin-right: 5px;}
+.userListBox li a{ display: block; color: #333333; padding: 0 5px; }
+.userListBox li a span.delBtn{ display:inline-block; padding:0 5px;}
+.userListBox li a:hover{ background-color: #993300; color: #FFFFFF; }
+.schoolClassBox{}
+.schoolClassListBox{ }
+.schoolClassListBox .allchecked{ font-size: 14px; margin-bottom: 5px;}
+.classUserBox{ padding-left: 5px; overflow: hidden;}
+.classUserBox .checkedClassTitle { padding: 2px 0; font-size: 13px;}
+.checkedClassTitle label.checkedClassAll{ *display: inline-block; height: 20px; padding: 1px; line-height: 20px; margin:2px 1px;  color: #f59201; background:url('/image/banban/on-off-nav2.png') center no-repeat; padding-right:21px; cursor: pointer;}
+.checkedClassTitle label.checkedClassAll:hover{ text-decoration: underline; }
+/*.checkedClassTitle label.checkedClassAll{ *display: inline-block; height: 22px; padding: 1px; line-height: 20px; margin:2px 3px;   cursor: pointer;}*/
+.checkedClassTitle label.checkedOff{background-position: right -19px; }
+.checkedClassTitle label.checkedOn{background-position: right 1px; } 
+.checkedClassTitle span.checkInfo{ color: #999999;}
+.checkedClassTitle input[type="checkbox"]{vertical-align: -5px; *vertical-align: 1px;}
+ul.userBoxUl{ padding-left: 30px; overflow: hidden;}
+ul.userBoxUl li{ float: left; margin: 4px 5px;  }
+ul.userBoxUl li a{ display: block; position: relative; padding: 0px 15px; height: 30px; border-radius: 3px; line-height: 28px; background: #f5f4eb; border:1px solid #d5d5d5; color: #333333; white-space:nowrap;}
+ul.userBoxUl li a.searchB{border:1px solid #f59201; }
+ul.userBoxUl li a.checked{}
+ul.userBoxUl li a.checked span{ display: block; position: absolute; right: -5px; top:-5px; width: 14px; height: 14px; background: url('/image/banban/notice/c_k.png') no-repeat;}
+/*ul.userBoxUl li a:hover{background: #f59201; color: #FFFFFF;}*/ 
+.schoolItmeBox { padding-left: 0;}
+.schoolItmeBox ul{ padding-left: 15px; overflow: hidden; margin-bottom: 10px;}
+
+ul.checkedBox{ display: inline;}
+ul.checkedBox li{ float: left; margin: 4px 5px;  }
+ul.checkedBox li a{ display: block; *width: 90px; padding: 0px 5px 0 15px; *padding: 0px 5px 0 10px; height: 30px; border-radius: 3px; line-height: 28px; background: #f5f4eb; border:1px solid #d5d5d5; color: #333333; cursor: default; }
+ul.checkedBox li a span.text{ display:block; margin-right: 22px; overflow: hidden;  *width: 65px; text-overflow: ellipsis; white-space: nowrap; }
+ul.checkedBox li a span.delBtn{ float: right; margin-top:8px; width: 20px; height: 12px; background: url('/image/banban/x_ico.png') center no-repeat; line-height: 30px; cursor:pointer;}
+ul.checkedBox li a:hover span.delBtn{ opacity: 0.8; } 
+.tableForm tr.errorTip td{ padding: 0 0 10px 0; }
+.tReceiverBox{ height: 30px; }
+.selectTableBox{ position: relative; padding: 3px 5px; background: #EBEBEB;}
+.selectTableBox input.select{ width: 100%; }
+.selectTableBox .searchpic{ display: inline-block; position: absolute; right: 10px; top:6px; width: 30px; height: 30px; background: url('/image/banban/class/search_pic.png') center no-repeat; }
+.Validform_loading { padding-left: 20px;  background: url(/image/banban/onLoad.gif) no-repeat left center; }
+.Validform_checktip {  margin-left: 8px; line-height: 20px; height: 20px; overflow: hidden; color: #999; font-size: 13px;}
+.tabBox{  }
+.tabBox span{ display: inline-block; border: 1px solid #f1f1f1; }
+.tabBox a{display: inline-block; padding:8px 15px; color: #666; }
+.tabBox a.on{ background: #f59201; color: #FFFFFF;}
+
+
+/*2015.5.20*/
+.send-common-head {padding-top: 20px;padding-bottom: 10px;font-weight: 600;}
+.score-template {margin: 10px 0;}
+.score-template th {font-size: 15px;}
+.score-template th, .score-template td {padding: 10px 25px;border: 1px solid #000;text-align: center;}
+.popFile {color: #999999;line-height: 30px;margin-left: 120px;}
+.select-file {margin-top: 10px;padding: 10px 0 10px 2px;}
+.send-action {margin-top: 25px;}
+.form-group label {width: 50px;color: #666;}
+.form-group input, .form-group select {color: #000;border: 1px solid #b0b0b0;border-radius: 3px;}
+.form-group input {width: 190px;}
+.form-group select {width: 300px;}
+.notice-suss-box{margin:30px 0 10px 0;}
+.notice-suss-box .n-t-title{padding-bottom: 10px;color: #f5774e; font-size: 18px; font-weight: 700;}
+.msgPsotBox{min-height:150px;padding: 15px; margin-top: 30px;margin-bottom: 30px; font-size: 14px; border:1px dotted #c9c9c9;}
+.msgPsotBox .b-t{ height: 32px; padding-left: 30px; line-height: 42px; color: #993300; background: url(/image/banban/app/t_ico.png) left center no-repeat;}
+.row-b{display: block; margin-top: 10px; overflow: hidden;}
+.row-b .b-l{ float: left; width: 78px;}
+.row-b .b-r{margin-left: 80px;}
+
+/* exampreview 2015.12.25 */
+.examPvbox { margin: 10px 0;  color: #6d6b6b; font-size: 15px;  overflow: hidden;}
+.examPvbox a.upDownBtn { padding-left: 20px; color: #9d9c99; background: url('/image/banban/on-off-nav2.png') no-repeat; background-position: left 0;} 
+.examPvbox a.downB{ background-position: left -21px;}
+.examPvbox .tableC { max-width: 65%; margin-bottom: 20px;}
+.examPvbox .tableC > thead > tr > th ,.examPvbox .tableC > tbody > tr > td{ font-size: 14px; padding: 0; text-align: center;} 
+.examPvbox .tableTitle {  font-size: 15px; margin: 25px 0;  }
+.examPvbox .title { margin-bottom: 45px;  font-size: 15px; }
+.examPvbox .title h1 {font-size: 17px;  color: #585656; font-weight: 600;} 
+.examPvbox .title div{ padding:10px 0; }
